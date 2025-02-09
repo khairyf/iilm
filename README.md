@@ -1,3 +1,4 @@
 # CS-361-Class-Assignment
 
-This is a test for Assignment 2.
+iilm is a software to see/read wanted pictures/knowledge.
+By - Fariss Khairy
