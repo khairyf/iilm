@@ -1,0 +1,9 @@
+zmq
+zmq.auth
+zmq.auth.thread
+
+webbrowser
+mysql.connector
+google
+PIL.Image
+googleapiclient.discovery
