@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__
+client_transfer.key
+client_transfer.key_secret
+server_transfer.key
+server_transfer.key_secret
+information.txt

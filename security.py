@@ -1,4 +1,3 @@
-import mysql.connector as database_link
 import zmq, zmq.auth
 from zmq.auth.thread import ThreadAuthenticator
 
@@ -12,15 +11,21 @@ server_public, server_secret = zmq.auth.load_certificate("server_transfer.key_se
 server.curve_secretkey = server_secret
 server.curve_publickey = server_public
 server.curve_server = True
-server.bind("tcp://*:1398")
+server.bind("tcp://*:8089")
+
+users = {
+    1: "Testing Software"
+}
 
 while True:
     authentication_data = server.recv().decode()
 
-    if authentication_data == "Fariss Khairy":
+    if authentication_data in users.values():
         access = "success"
     else:
         access = "denied"
+
+    print(access)
 
     server.send(access.encode())
 
