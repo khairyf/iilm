@@ -85,7 +85,7 @@ while response != "close":
     print()
     print("Would you like to see/read anything else? Results will only show after hitting \"Enter\" button.\n\n"
           "To redo previous search, type \"redo\" + \"Enter\" button.\n\n"
-          "Close software by entering \"close\".\n\n")
+          "Close software by entering \"close\".\n")
     print()
     response = input()
     print()
